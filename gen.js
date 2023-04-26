@@ -8,6 +8,6 @@ document.getElementById("t1buy").addEventListener("click", function(z){
   
 function cost1(){
  ct1 = new Decimal(10);
- ct1 = ct1.mul((1.5).pow(player.t1));
+ ct1 = ct1.mul((new Decimal(1.5)).pow(player.t1));
  player.c1 = ct1;
 }
