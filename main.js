@@ -2,7 +2,7 @@
 console.log("asa")
 
 var player = {
-    t1: new Decimal(0),
+    t1: new Decimal(1),
     c1: new Decimal(10),
     x: new Decimal(10)
 };
@@ -16,5 +16,5 @@ setInterval(function(a){
 function gain(v){
     g = new Decimal(v)
     g = g.mul(player.t1)
-   // player.t1 = player.t1.plus(g)
+    player.t1 = player.t1.plus(g)
 }
