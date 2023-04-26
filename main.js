@@ -17,5 +17,5 @@ setInterval(function(a){
 function gain(v){
     g = new Decimal(v)
     g = g.mul(player.t1)
-    player.x = player.x.add(g)
+    player.x = player.x.plus(g)
 }
