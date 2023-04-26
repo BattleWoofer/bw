@@ -1,8 +1,8 @@
-document.getElementById("t1buy").addEventListener("click", function(x){
+document.getElementById("t1buy").addEventListener("click", function(z){
   cost1();
   if(player.x.lte(player.c1)){
       player.t1 += 1;
-      player.x -= player.c1;
+      player.t1 -= player.c1;
   }
 })
   
