@@ -3,8 +3,8 @@ console.log("asa")
 
 var player = {
     t1: new Decimal(0),
-    c1: new Decimal(10)
-    x: new Decimal(10)
+    c1: new Decimal(10),
+    x: new Decimal(10),
 };
 
 
