@@ -9,7 +9,6 @@ var player = {
 
 
 setInterval(function(a){
-    console.log("bleh")
     gain(0.1);
     document.getElementById("test").innerHTML = player.x.normify(2);
 },100)
