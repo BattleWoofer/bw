@@ -5,7 +5,7 @@ document.getElementById("t1buy").addEventListener("click", function(z){
   cost1();
 
   if(player.x.gte(player.c1)){
-      player.t1 = player.t1.plus(1);
+      player.t1 += 1;
       player.x = player.x.minus(player.c1);
   }
   buyt1button.innerHTML = player.c1.normify(0);
