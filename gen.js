@@ -15,6 +15,5 @@ document.getElementById("t1buy").addEventListener("click", function(z){
 function cost1(){
     player.c1 = new Decimal(10)
     player.c1 = player.c1.mul(Math.pow(1.5, player.t1))
-    return player.c1
 }
 
