@@ -1,15 +1,21 @@
-/* document.getElementById("t1buy").addEventListener("click", function(z){
+buyt1button = document.getElementById("t1buy")
+buyt1button.innerHTML = player.c1.normify(0);
+
+document.getElementById("t1buy").addEventListener("click", function(z){
   cost1();
-  if(player.x.lte(player.c1)){
-      player.t1 += 1;
-      player.t1 -= player.c1;
+
+  if(player.x.gte(player.c1)){
+      player.t1 = player.t1.plus(1);
+      player.x = player.x.minus(player.c1);
   }
+  buyt1button.innerHTML = player.c1.normify(0);
+
 })
   
 function cost1(){
- ct1 = new Decimal(10);
- ct1 = ct1.mul((new Decimal(1.5)).pow(player.t1));
- ct1 = ct1.mul(Math.pow(1.5, player.t1))
- player.c1 = ct1;
+    player.c1 = new Decimal(10)
+    console.log(player.c1, player.t1)
+    player.c1 = player.c1.mul(player.t1.pow_base(1.5))
+    return player.c1
 }
-*/
+
