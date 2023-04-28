@@ -1,5 +1,5 @@
 var player = {
-    t1 = 0,
+    t1: 0,
     c1: new Decimal(10),
     x: new Decimal(10)
 };
