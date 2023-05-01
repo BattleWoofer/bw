@@ -5,17 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 
 
 </head>
 <body>
+    
     <p id="test"></p>
-    <button id="t1buy">Buy</button>
+
+    <button id="buyTab" style="display: inline-block;">Generators</button>    
+    <button id="achTab" style="display: inline-block;">Achievements</button>
+    <button id="optionsTab" style="display: inline-block;">Options</button>
+    <br>
+    <span id="buyPanel">
+        <button id="t1buy">Buy</button><p id="t1info" style="display: inline-block;"></p>
+        <br>
+        <button id="t2buy">Buy</button><p id="t2info" style="display: inline-block;"></p>
+        <br>
+        <button id="t3buy">Buy</button><p id="t3info" style="display: inline-block;"></p>
+        <br>
+        <button id="t4buy">Buy</button><p id="t4info" style="display: inline-block;"></p>    
+    </span>
+    <span id="achPanel"  style="display: none;">
+        <p id="apText" style="display: inline-block;"> You have <p style="display: inline-block;" id="ap">&#160;0</p> acheivement points, which:</p> <p style="display: inline-block;">Multiply all generators by </p><p style="display: inline-block;" id="ap">&#160;1x</p>
+        <br>
+        <button class="achgrid" style="display:inline-block" id="11"></button>        
+        <button class="achgrid" style="display:inline-block" id="12"></button>
+        <button class="achgrid" style="display:inline-block" id="13"></button>
+        <button class="achgrid" style="display:inline-block" id="14"></button>
+        <button class="achgrid" style="display:inline-block" id="15"></button>
+        <button class="achgrid" style="display:inline-block" id="16"></button>
+        <button class="achgrid" style="display:inline-block" id="17"></button>
+        <button class="achgrid" style="display:inline-block" id="18"></button>
+        <br> 
+        <button class="achgrid" style="display:inline-block" id="21"></button>
+
+
+    </span>
+    <span id="optionsPanel">
+
+    </span>
 
 </body>
 
     <script src="breakinf.js"></script>
     <script src="main.js"></script>
     <script src="gen.js"></script>
+    <script src="tab.js"></script>
+    <script src="achieve.js"></script>
+
 
 </html>
